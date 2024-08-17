@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+:root{
+    --mainBg: white;
+    --mainColor: black;
+}
+
+.dark-theme{
+    --mainBg: black;
+    --mainColor: white;
+}
+
+body{
+    background: var(--mainBg);
+    transition: .3s;
+}
+
+@import '../../components/Header/Header.scss';
+@import '../../components/Main/Main.scss';
